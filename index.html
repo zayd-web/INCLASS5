@@ -1,192 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <title>My Website</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-  
-    h1 {
-      color: navy;
-    }
-    
-    aside ul {
-      list-style: none;
-    }
-
-    aside ul li {
-      display: inline;
-    }
-
-    aside ul li a {
-      border: 2px solid indigo;
-      border-radius: 5px;
-      color: indigo;
-      text-decoration: none;
-      padding: 8px 12px;
-      background-color: rgb(233, 206, 1);
-    }
-
-    aside ul li a:hover {
-      border-color: cornsilk;
-      color: rgb(189, 155, 18);
-      background-color: indigo;
-    }
-
-    /* Other styles moved to styles.css */
-    html {
-      font: 20px Arial, sans-serif;
-    }
-
-    body {
-      display: flex;
-      flex-direction: column;
-      margin: 1rem;
-    }
-
-    .structural ul {
-      display: flex;
-      list-style: none;
-      padding: 0;
-    }
-
-    .structural ul li {
-      display: inline;
-    }
-
-    .structural ul li a {
-      border: 2px solid indigo;
-      color: indigo;
-      text-decoration: none;
-      padding: 1em;
-      background-color: cornsilk;
-      transition: all 0.3s ease;
-    }
-
-    .structural ul li a:hover {
-      border-color: cornsilk;
-      color: cornsilk;
-      background-color: indigo;
-    }
-
-    /* Other Task 5 CSS styles */
-    section {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: stretch;
-    }
-
-    header {
-      display: flex;
-      flex: 1 10%;
-    }
-
-    .structural nav {
-      display: flex;
-      flex: 1 5%;
-    }
-
-    main {
-      display: flex;
-      flex: 2 1 70%;
-      flex-direction: column;
-      margin: 1rem;
-    }
-
-    aside {
-      display: flex;
-      flex: 1 2 30%;
-      margin: 1rem;
-    }
-
-    footer {
-      display: flex;
-      flex: 1 5%;
-    }
-
-    main#gallery {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1rem;
-    }
-
-    main#gallery figure {
-      border: 1px solid #000;
-      padding: 10px;
-    }
-
-    main#gallery img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    main#gallery figcaption {
-      text-align: center;
-      margin-top: 5px;
-    }
-
-    @media screen and (max-width: 1200px) {
-      html {
-        font-size: 15px;
-      }
-    }
-
-    @media screen and (max-width: 600px) {
-      html {
-        font-size: 10px;
-      }
-      main#gallery {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  <title>Drake's Page</title>
 </head>
-
 <body>
   <header>
-    <h1>Welcome to My Website</h1>
-    <nav class="structural">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-      </ul>
-    </nav>
+    <h1>Drake</h1>
+    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDErglWU2D6wOPX7kvflbT4Kp45AXuWf7AhRw6XF7_yP_33q-s" alt="Drake Image">
   </header>
 
-  <section>
-    <main id="gallery">
-      <!-- Placeholder for gallery content -->
-      <figure>
-        <img src="/Users/zaydmohamed/Downloads/images 2/html.png" alt="Image 1 Description">
-        <figcaption>HTML</figcaption>
-      </figure>
-      <figure>
-        <img src="/Users/zaydmohamed/Downloads/images 2/css.jpg" alt="Image 2 Description">
-        <figcaption>CSS</figcaption>
-      </figure>
-      <figure>
-        <img src="/Users/zaydmohamed/Downloads/images 2/git-github.png" alt="Image 3 Description">
-        <figcaption>GIT HUB</figcaption>
-      </figure>
-      <figure>
-        <img src="/Users/zaydmohamed/Downloads/images 2/vscode_background.jpg" alt="Image 4 Description">
-        <figcaption>VSCODE</figcaption>
-      </figure>
-      
-      <!-- Add two more figure elements as needed -->
-    </main>
+  <nav>
+    <ul>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <link rel="stylesheet" href="styles.css">
+    </ul>
+  </nav>
 
-    <aside>
-      <!-- Add aside content if needed -->
-    </aside>
+  <section>
+    <h2>Biography</h2>
+    <p>Drake, born <b>Aubrey Drake Graham</b> on October 24, 1986, in Toronto, Canada, is a renowned rapper, singer, songwriter, actor, and entrepreneur. He gained fame through his role on "Degrassi: The Next Generation" before transitioning to music. His hit albums like "Take Care" and "Views" have made him a global icon, and he's known for introspective lyrics. Drake has won numerous awards, including multiple Grammy Awards and has set various records on the Billboard charts, such as the most charted songs by a solo artist in the history of the Billboard Hot 100. He's also involved in entrepreneurship, co-founding OVO Sound and investing in brands. Drake keeps his personal life relatively private but has made headlines for his relationships and family, including his son, Adonis.</p>
   </section>
 
-  <footer>
-    <p>&copy; 2023 My Website. All rights reserved.</p>
-  </footer>
-</body>
+  <section>
+    <h2>Quote</h2>
+    <blockquote>
+      <p>"Never let success get to your head and never let failure get to your heart."</p>
+    </blockquote>
+  </section>
 
+  <section>
+    <h2>Drake's Achievements</h2>
+    <table border="1">
+      <caption>Drake's Awards and Nominations</caption>
+      <tr>
+        <th>Year</th>
+        <th>Nominee / Work</th>
+        <th>Award</th>
+        <th>Result</th>
+      </tr>
+      <tr>
+        <td>2010</td>
+        <td>Drake</td>
+        <td>Favorite Rap/Hip-Hop Artist</td>
+        <td>Nominated</td>
+      </tr>
+      <tr>
+        <td>2010</td>
+        <td>Thank Me Later</td>
+        <td>Favorite Rap/Hip-Hop Album</td>
+        <td>Nominated</td>
+      </tr>
+      <!-- Add more rows based on the provided achievements -->
+      <!-- ... -->
+    </table>
+  </section>
+
+</body>
 </html>

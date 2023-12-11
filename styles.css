@@ -1,0 +1,56 @@
+/* Common CSS styles for the elements */
+
+/* Header */
+header {
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0); /* Gradient colors for header */
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  /* Navigation */
+  nav ul,
+  nav ul ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    position: relative;
+    display: inline-block;
+  }
+  
+  nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9; /* Background color for submenu */
+  }
+  
+  nav ul li:hover > ul {
+    display: block;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Aside */
+  aside {
+    /* Add the URL for your background image */
+    background-image: url('path_to_your_image.jpg'); /* Replace with your image path */
+    background-size: cover;
+    padding: 20px;
+  }
+  
+  /* Footer */
+  footer {
+    background: linear-gradient(to bottom, #f0f0f0, #ffffff); /* Gradient colors for footer */
+    text-align: center;
+    padding: 10px 0;
+  }
+  
